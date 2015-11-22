@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="player" Loaded="windowLoaded" Background="#77000000" AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize" MouseDown="windowMouseDown" Height="313.422" Width="185.758" KeyDown="keyPressed">
+    <Grid>
+        <Button ClipToBounds="True" x:Name="openFileButton" HorizontalAlignment="Left" Margin="22,234,0,0" VerticalAlignment="Top" Width="123" Click="openFileButtonMouseClick" Height="22">
+            <Grid ClipToBounds="True" Height="22" Width="113">
+                <Image Source="Resources/desert.jpg" Margin="-37,-21,-38,-34"></Image>
+                <TextBlock HorizontalAlignment="Center" Foreground="#FFFFFF">点我选择文件喵</TextBlock>
+            </Grid>
+        </Button>
+
+        <Button x:Name="playPauseButton" Content="暂停" HorizontalAlignment="Left" Margin="46,269,0,0" VerticalAlignment="Top" Width="75" Click="playPauseButtonClick"/>
+        <TextBlock x:Name="musicinfo" Foreground="#FFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,42,0,0" Width="166" Height="79" TextAlignment="Center">你还没有选择音乐nya</TextBlock>
+        <Button x:Name="button" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Margin="79,1,0,0" Height="17" Click="closewin"/>
+        <Button x:Name="button1" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="103,1,0,0" Height="17" Click="MinimizeWin"/>
+
+
+    </Grid>
+</Window>
